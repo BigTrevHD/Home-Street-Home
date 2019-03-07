@@ -7,7 +7,7 @@ ModelImporter:
     100002: //RootNode
     400000: roads
     400002: //RootNode
-    2100000: roadsMat
+    2100000: palette
     2300000: roads
     3300000: roads
     4300000: roads
@@ -16,7 +16,7 @@ ModelImporter:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 0
+    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
