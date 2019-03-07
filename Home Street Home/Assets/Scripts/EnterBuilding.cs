@@ -7,17 +7,31 @@ public class EnterBuilding : MonoBehaviour {
     public int goToScene;
     public int currentScene;
 
+    private gameMaster immortal;
+
 
 	// Use this for initialization
 	void OnTriggerEnter (Collider other)
     {
         if(other.CompareTag("Player"))
-        SceneManager.LoadScene(goToScene);
+        {
+            
+            SceneManager.LoadScene(goToScene);
+            immortal.PlayerisSwitching();
+        }
+        
     }
 	
 	// Update is called once per frame
 	void Update () {
         currentScene = SceneManager.GetActiveScene().buildIndex;
+
+        if (currentScene == 0)
+        {            
+            Debug.Log("Position: " + PlayerPrefs.GetFloat("X") + PlayerPrefs.GetFloat("Y") + PlayerPrefs.GetFloat("Z"));
+        }
+
+        
 
         
 	}
@@ -25,8 +39,10 @@ public class EnterBuilding : MonoBehaviour {
     void OnMouseDown ()
     {
         if (currentScene != 0)
-        {
+        {            
             SceneManager.LoadScene(0);
+            immortal.PlayerIsComingBack();
+
         }
     }
 }
