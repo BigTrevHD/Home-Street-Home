@@ -5,7 +5,7 @@ using UnityEngine;
 public class NavAI : MonoBehaviour
 {
 
-    private float speed = 3f;
+    private float speed = 1f;
 
     Animator anim;
 
