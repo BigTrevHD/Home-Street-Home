@@ -22,7 +22,7 @@ public class Interact : MonoBehaviour {
         {
             itemText.text = "" + hit.collider.gameObject.name;
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
-            Debug.Log("Object: " + hit.collider.gameObject.name);
+          //  Debug.Log("Object: " + hit.collider.gameObject.name);
         } 
         else
         {

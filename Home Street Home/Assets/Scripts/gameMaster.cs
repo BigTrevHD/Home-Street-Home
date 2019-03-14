@@ -10,7 +10,7 @@ public class gameMaster : MonoBehaviour {
     public GameObject Diary;
     public Text cashText; 
 
-    private float cash = 12.0f;
+    public float cash = 12.0f;
 
 
 
