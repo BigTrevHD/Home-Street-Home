@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\MouseHighlight.cs" />
     <Compile Include="Assets\Scripts\NavAI.cs" />
     <Compile Include="Assets\Scripts\playerController.cs" />
+    <Compile Include="Assets\Scripts\playerStats.cs" />
     <Compile Include="Assets\Scripts\Shop\GlobalShop.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/Lydia/Documents/GitHub/Home-Street-Home/Home Street Home/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
