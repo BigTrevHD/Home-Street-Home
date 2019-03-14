@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class gameMaster : MonoBehaviour {
     public GameObject player;
+    public GameObject lastPos;
 
     private bool showDiary;
     public GameObject Diary;
@@ -40,15 +41,16 @@ public class gameMaster : MonoBehaviour {
 
     public void PlayerisSwitching()
     {
-        PlayerPrefs.SetFloat("X", player.transform.position.x);
-        PlayerPrefs.SetFloat("Y", player.transform.position.y);
-        PlayerPrefs.SetFloat("Z", player.transform.position.z);
+        PlayerPrefs.SetFloat("X", lastPos.transform.position.x);
+        PlayerPrefs.SetFloat("Y", lastPos.transform.position.y);
+        PlayerPrefs.SetFloat("Z", lastPos.transform.position.z);
         // Player Switches Scene
+
     }
     public void PlayerIsComingBack()
     {
         // Player comes back
-        player.transform.position = new Vector3(PlayerPrefs.GetFloat("X"), PlayerPrefs.GetFloat("Y"), PlayerPrefs.GetFloat("Z"));
+        
     }
 }
 
