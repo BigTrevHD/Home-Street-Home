@@ -283,6 +283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1500089193}
+  lastPos: {fileID: 0}
   Diary: {fileID: 869941876}
   cashText: {fileID: 902820480}
   cash: 12
@@ -1089,7 +1090,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: 5eaa9f27d1400a949b6e0e4b844f9392, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.37550536
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 5eaa9f27d1400a949b6e0e4b844f9392, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2683,8 +2684,6 @@ Transform:
   - {fileID: 1300386701}
   - {fileID: 849383809}
   - {fileID: 642306239}
-  - {fileID: 1009098164}
-  - {fileID: 1070181713}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3487,12 +3486,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1009098163}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -504.25, y: 31.662, z: -1737.32}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.7703075, z: 0}
   m_LocalScale: {x: 3.0878298, y: 3.1399999, z: 3.85}
   m_Children: []
-  m_Father: {fileID: 783190475}
-  m_RootOrder: 5
+  m_Father: {fileID: 1668112587}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1009098165
 BoxCollider:
@@ -3795,7 +3794,7 @@ GameObject:
   - component: {fileID: 1070181715}
   - component: {fileID: 1070181714}
   m_Layer: 0
-  m_Name: Pawn Shop (2)
+  m_Name: Pawn Shop
   m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3808,11 +3807,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1070181712}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -507.34, y: 32.375, z: -1737.3}
+  m_LocalPosition: {x: -3.0899963, y: 2.483307, z: 0.019897461}
   m_LocalScale: {x: 3.0878298, y: 4.56556, z: 3.85}
   m_Children: []
-  m_Father: {fileID: 783190475}
-  m_RootOrder: 6
+  m_Father: {fileID: 1668112587}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1070181714
 BoxCollider:
@@ -5500,6 +5499,36 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 60, y: 2, z: 60}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!1 &1668112586
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1668112587}
+  m_Layer: 0
+  m_Name: Pawn Shop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1668112587
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1668112586}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 11.27, y: 0, z: -9.62}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1009098164}
+  - {fileID: 1070181713}
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1689310081 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 1e48b2dc9fcf0d9488ec618f078a2b1a,
@@ -5838,7 +5867,7 @@ GameObject:
   - component: {fileID: 1789081227}
   - component: {fileID: 1789081228}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Raycast
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6930,6 +6959,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2067556000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2067556001}
+  m_Layer: 0
+  m_Name: LastPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2067556001
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2067556000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.69}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1500089195}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2081287967
 Prefab:
