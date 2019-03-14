@@ -28,7 +28,7 @@ public class EnterBuilding : MonoBehaviour {
 
         if (currentScene == 0)
         {            
-            Debug.Log("Position: " + PlayerPrefs.GetFloat("X") + PlayerPrefs.GetFloat("Y") + PlayerPrefs.GetFloat("Z"));
+          //  Debug.Log("Position: " + PlayerPrefs.GetFloat("X") + PlayerPrefs.GetFloat("Y") + PlayerPrefs.GetFloat("Z"));
         }
 
         
