@@ -20,7 +20,7 @@ public class playerStats : MonoBehaviour
     public Slider ThirstBar;
     public Slider HungerBar;
 
-    public float minAmount = 5f;
+    public float minAmount = 50f;
 
 
     // Use this for initialization

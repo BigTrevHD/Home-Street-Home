@@ -12,6 +12,14 @@ public class gameMaster : MonoBehaviour {
     public Text cashText; 
 
     public float cash = 12.0f;
+    //Camera Control
+    public Camera cam;
+    public Transform mainCam;
+    public Transform cafeCam;
+
+    //Scene switch
+    public int currentScene;
+
 
 
 
@@ -37,13 +45,15 @@ public class gameMaster : MonoBehaviour {
             Diary.SetActive(false);
         }
         cashText.text = "£" + cash;
+
+
     }
 
     public void PlayerisSwitching()
     {
-        PlayerPrefs.SetFloat("X", lastPos.transform.position.x);
-        PlayerPrefs.SetFloat("Y", lastPos.transform.position.y);
-        PlayerPrefs.SetFloat("Z", lastPos.transform.position.z);
+        //PlayerPrefs.SetFloat("X", lastPos.transform.position.x);
+        //PlayerPrefs.SetFloat("Y", lastPos.transform.position.y);
+        //PlayerPrefs.SetFloat("Z", lastPos.transform.position.z);
         // Player Switches Scene
 
     }
