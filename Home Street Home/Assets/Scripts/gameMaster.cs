@@ -25,8 +25,8 @@ public class gameMaster : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-		
-	}
+        
+    	}
 	
 	// Update is called once per frame
 	void Update () {
@@ -61,6 +61,11 @@ public class gameMaster : MonoBehaviour {
     {
         // Player comes back
         
+    }
+
+    public void BuyFood(float cost)
+    {
+        cash -= cost;
     }
 }
 
