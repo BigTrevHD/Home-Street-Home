@@ -20,6 +20,8 @@ public class gameMaster : MonoBehaviour {
     //Scene switch
     public int currentScene;
 
+    //Inventory
+    public Inventory inv;
 
 
 
@@ -65,11 +67,34 @@ public class gameMaster : MonoBehaviour {
 
     public void BuyFood(float cost)
     {
-        if(cash > cost)
+        if(cash >= cost)
         {
             cash -= cost;
-        }
-        
+            
+        }               
     }
-}
+
+    public void AddToInv(GameObject item)
+    {
+        if (inv.Slot1Used == 0)
+        {
+            inv.Slot1 = item;
+
+            inv.Slot1Used = 1;
+
+            if (inv.Slot1Used == 1 & inv.Slot2Used == 0)
+            {
+                inv.Slot2 = item;
+                inv.Slot2Used = 1;
+
+                if (inv.Slot1Used == 1 & inv.Slot2Used == 1 & inv.Slot3Used == 0)
+                {
+                    inv.Slot3 = item;
+                    inv.Slot3Used = 1;
+                }
+            }
+        }
+
+    }
+    }
 

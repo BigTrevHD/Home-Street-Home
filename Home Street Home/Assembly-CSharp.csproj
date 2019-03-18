@@ -61,6 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Inventory.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraSwitch.cs" />
     <Compile Include="Assets\Scripts\Camera\LookAt.cs" />
     <Compile Include="Assets\Scripts\DontDestroy.cs" />
