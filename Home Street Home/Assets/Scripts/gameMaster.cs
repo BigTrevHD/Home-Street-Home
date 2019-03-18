@@ -65,7 +65,11 @@ public class gameMaster : MonoBehaviour {
 
     public void BuyFood(float cost)
     {
-        cash -= cost;
+        if(cash > cost)
+        {
+            cash -= cost;
+        }
+        
     }
 }
 

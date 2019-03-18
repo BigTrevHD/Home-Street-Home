@@ -1030,6 +1030,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 3a024ef477932dc47af770976915fa60,
     type: 3}
   m_PrefabInternal: {fileID: 563524089}
+--- !u!114 &250333173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 250333172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97d66ada2024be249a5a54621865f997, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  giveChance: 0
+  giveAmount: 0
 --- !u!114 &250333175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2766,6 +2779,10 @@ Prefab:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 6a0370e558c1f6541aaf33a6f3cb2151, type: 2}
+    - target: {fileID: 100000, guid: 3a024ef477932dc47af770976915fa60, type: 3}
+      propertyPath: m_TagString
+      value: NPC
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a024ef477932dc47af770976915fa60, type: 3}
   m_IsPrefabAsset: 0
@@ -6297,6 +6314,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100054, guid: 70374246fa652504b96c058983ca36d3,
     type: 3}
   m_PrefabInternal: {fileID: 2086900851}
+--- !u!114 &1182272533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1182272532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97d66ada2024be249a5a54621865f997, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  giveChance: 0
+  giveAmount: 0
 --- !u!114 &1182272535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6314,19 +6344,6 @@ MonoBehaviour:
   - {fileID: 2143387064}
   - {fileID: 359699117}
   - {fileID: 953300770}
---- !u!114 &1182272536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1182272532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97d66ada2024be249a5a54621865f997, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  giveChance: 0
-  giveAmount: 0
 --- !u!135 &1182272537
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -10427,6 +10444,10 @@ Prefab:
     - target: {fileID: 100054, guid: 70374246fa652504b96c058983ca36d3, type: 3}
       propertyPath: m_Name
       value: Male
+      objectReference: {fileID: 0}
+    - target: {fileID: 100054, guid: 70374246fa652504b96c058983ca36d3, type: 3}
+      propertyPath: m_TagString
+      value: NPC
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70374246fa652504b96c058983ca36d3, type: 3}

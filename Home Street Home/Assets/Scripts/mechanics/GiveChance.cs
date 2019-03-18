@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class GiveChance : MonoBehaviour {
     public int giveChance;
-    public int giveAmount;
+    public float giveAmount;
 
 	// Use this for initialization
 	void Start () {
-        giveChance = Random.Range(50, 100);
+        giveChance = Random.Range(1, 100);
         giveAmount = giveChance / 10;
     }
 	
