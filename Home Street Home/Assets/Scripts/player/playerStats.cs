@@ -30,7 +30,7 @@ public class playerStats : MonoBehaviour
         ThirstBar.maxValue = Thirst;
         HungerBar.maxValue = Hunger;
 
-        updateUI();
+        UpdateUI();
     }
 
     // Update is called once per frame
@@ -63,12 +63,12 @@ public class playerStats : MonoBehaviour
             print("PLAYER IS STARVING");
         }
 
-        updateUI();
+        UpdateUI();
 
 
     }
 
-    void updateUI()
+    void UpdateUI()
     {
         Warmth = Mathf.Clamp(Warmth, 0, 100f);
         Thirst = Mathf.Clamp(Thirst, 0, 100f);
@@ -81,6 +81,7 @@ public class playerStats : MonoBehaviour
 
 
     }
+
 
     //end of class
 }

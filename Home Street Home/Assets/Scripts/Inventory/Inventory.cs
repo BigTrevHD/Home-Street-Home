@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour {
     public gameMaster gm;
-    public Item itemScript;
+   
 
     public List<GameObject> InventorySlots = new List<GameObject>();
     private int allSlots;
