@@ -4955,7 +4955,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 4.5
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5019,7 +5019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74035552c4be9c649946ba467aa94101, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 3
+  cost: 3.5
 --- !u!1 &924535276 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 75a0949199303b74c93e54fac0c8a52f,
@@ -7987,11 +7987,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 57292495}
         m_MethodName: BuyItem
-        m_Mode: 4
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 3
           m_StringArgument: 
           m_BoolArgument: 0
@@ -8469,11 +8469,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 57292495}
         m_MethodName: BuyItem
-        m_Mode: 4
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 6
           m_FloatArgument: 6
           m_StringArgument: 
           m_BoolArgument: 0
@@ -10981,11 +10981,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 57292495}
         m_MethodName: BuyItem
-        m_Mode: 4
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 3
           m_StringArgument: 
           m_BoolArgument: 0

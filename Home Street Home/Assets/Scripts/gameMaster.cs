@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,7 +12,7 @@ public class gameMaster : MonoBehaviour {
     public GameObject Diary;
     public Text cashText; 
 
-    public float cash = 12.0f;
+    public float cash = 12.00f;
     //Camera Control
     public Camera cam;
     public Transform mainCam;
@@ -32,7 +33,8 @@ public class gameMaster : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        
+        cash.ToString("#.00");
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             showDiary = !showDiary;
@@ -47,6 +49,8 @@ public class gameMaster : MonoBehaviour {
             Diary.SetActive(false);
         }
         cashText.text = "£" + cash;
+
+        
 
 
     }
