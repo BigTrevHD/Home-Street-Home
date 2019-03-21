@@ -48,7 +48,7 @@ public class Inventory : MonoBehaviour {
 
     }
 
-    private void Update()
+    public void Update()
     {
         for (int i = 0; i < allSlots; i++)
         {
@@ -57,6 +57,7 @@ public class Inventory : MonoBehaviour {
             if (slot[i].GetComponent<Slot>().item == null)
                 slot[i].GetComponent<Slot>().empty = true;
         }
+        
     }
 
     public void BuyItem(float cost)
@@ -95,4 +96,13 @@ public class Inventory : MonoBehaviour {
         }
         
     }
+    public void EmptySlot()
+    {
+        for (int i = 0; i < allSlots; i++)
+        {            
+            slot[i].GetComponent<Slot>().item = null;
+            
+
+        }
     }
+}
