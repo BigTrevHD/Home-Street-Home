@@ -114,6 +114,7 @@ MonoBehaviour:
   addThirst: 0
   addWarmth: 2
   stats: {fileID: 0}
+  inv: {fileID: 0}
 --- !u!114 &114472446275836634
 MonoBehaviour:
   m_ObjectHideFlags: 1
