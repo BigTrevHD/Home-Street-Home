@@ -25,6 +25,10 @@ public class gameMaster : MonoBehaviour {
     //Inventory
     public Inventory inv;
 
+    //time & day
+    private float day = 1;
+    public Text dayText;
+
 
 
     // Use this for initialization
@@ -50,8 +54,8 @@ public class gameMaster : MonoBehaviour {
             Diary.SetActive(false);
         }
         cashText.text = "£" + cash;
+        dayText.text = "Day: " + day;
 
-        
 
 
     }
