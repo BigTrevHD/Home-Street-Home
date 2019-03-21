@@ -14,4 +14,6 @@ public class Slot : MonoBehaviour {
         GameObject myItem = Instantiate(item, new Vector3(0,0,0), Quaternion.identity) as GameObject;
         myItem.transform.SetParent(transform, false);
     }
+
+   
 }

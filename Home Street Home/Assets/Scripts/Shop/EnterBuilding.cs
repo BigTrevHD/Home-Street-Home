@@ -52,6 +52,12 @@ public class EnterBuilding : MonoBehaviour {
             immortal.cam.transform.rotation = immortal.cafeCam.transform.rotation;
             immortal.cam.fieldOfView = 60;
         }
+        if (immortal.currentScene == 2)
+        {
+            immortal.cam.transform.position = new Vector3(immortal.shelterCam.transform.position.x, immortal.shelterCam.transform.position.y, immortal.shelterCam.transform.position.z);
+            immortal.cam.transform.rotation = immortal.shelterCam.transform.rotation;
+            immortal.cam.fieldOfView = 60;
+        }
 
 
 
