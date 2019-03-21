@@ -12,11 +12,12 @@ public class gameMaster : MonoBehaviour {
     public GameObject Diary;
     public Text cashText; 
 
-    public float cash = 12.00f;
+    public float cash;
     //Camera Control
     public Camera cam;
     public Transform mainCam;
     public Transform cafeCam;
+    public Transform shelterCam;
 
     //Scene switch
     public int currentScene;
@@ -28,12 +29,12 @@ public class gameMaster : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        
+        cash = 25.50f;
     	}
 	
 	// Update is called once per frame
 	void Update () {
-        cash.ToString("#.00");
+        cash = cash * (1000 / 1000);
 
         if (Input.GetKeyDown(KeyCode.Space))
         {

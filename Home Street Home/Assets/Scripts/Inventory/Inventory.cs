@@ -57,6 +57,7 @@ public class Inventory : MonoBehaviour {
             if (slot[i].GetComponent<Slot>().item == null)
                 slot[i].GetComponent<Slot>().empty = true;
         }
+       
         
     }
 
