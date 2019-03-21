@@ -101,7 +101,7 @@ public class Inventory : MonoBehaviour {
         for (int i = 0; i < allSlots; i++)
         {            
             slot[i].GetComponent<Slot>().item = null;
-            
+            return;
 
         }
     }
