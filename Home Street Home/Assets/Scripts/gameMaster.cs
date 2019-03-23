@@ -40,7 +40,7 @@ public class gameMaster : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        cash = cash * (1000 / 1000);
+        
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -55,7 +55,7 @@ public class gameMaster : MonoBehaviour {
         {
             Diary.SetActive(false);
         }
-        cashText.text = "£" + cash;
+        cashText.text = "£" + cash.ToString();
         dayText.text = "Day: " + day;
 
 
