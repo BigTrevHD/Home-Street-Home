@@ -26,8 +26,10 @@ public class gameMaster : MonoBehaviour {
     public Inventory inv;
 
     //time & day
-    private float day = 1;
+    [HideInInspector]
+    public float day = 1;
     public Text dayText;
+
 
 
 
