@@ -105,5 +105,5 @@ Project seems on course to be fine. You have a solid base to develop from and I 
   - Need skyboxes (avoid 'box world').
   - Gave tips on rotating the sky (stick a dome in there? Clarify with him).
 - Good to hear that you're improving tech and group work skills. There seems to be some real progress at a personal level for all of you.
-- _However_...Overall, given that art is very underdeveloped at this point, many mechanics are NOT actually working, and game isn't actually playable (and therfore not alpha), you're behind at this point. Can still more than make up for it though.
-  - 5/10.
+- _However_...Overall, given that art is very underdeveloped at this point, many mechanics are NOT actually working, and game isn't actually playable (and therefore not alpha), you're behind at this point. Can still more than make up for it though.
+  - **5/10.**
