@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System;
 using System.Collections.Generic;
+
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -18,6 +19,8 @@ public class gameMaster : MonoBehaviour {
     public Transform mainCam;
     public Transform cafeCam;
     public Transform shelterCam;
+  
+
 
     //Scene switch
     public int currentScene;
@@ -58,7 +61,7 @@ public class gameMaster : MonoBehaviour {
         cashText.text = "£" + cash.ToString();
         dayText.text = "Day: " + day;
 
-
+        
 
     }
 

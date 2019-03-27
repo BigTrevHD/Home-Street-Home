@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour {
     public gameMaster gm;
-   
+    public Slot slotScript;
+    public CanvasRayCast canvasCast;
+
 
     public List<GameObject> InventorySlots = new List<GameObject>();
     private int allSlots;
@@ -13,6 +15,9 @@ public class Inventory : MonoBehaviour {
     public GameObject slotHolder;
 
     public bool boughtItem = false;
+
+    public int slotNumb = 0;
+  
 
     //public GameObject Slot1;
     //public GameObject Slot2;
@@ -57,6 +62,8 @@ public class Inventory : MonoBehaviour {
             if (slot[i].GetComponent<Slot>().item == null)
                 slot[i].GetComponent<Slot>().empty = true;
         }
+        slotNumb = canvasCast.setSlotNumb;
+        Debug.Log("This Inventory slot is " +slotNumb);
        
         
     }
@@ -99,11 +106,13 @@ public class Inventory : MonoBehaviour {
     }
     public void EmptySlot()
     {
-        for (int i = 0; i < allSlots; i++)
-        {            
-            slot[i].GetComponent<Slot>().item = null;
+        
+        {        
+            slot[slotNumb].GetComponent<Slot>().item = null;
             return;
 
         }
     }
+
+   
 }
