@@ -8,7 +8,7 @@ public class playerController : MonoBehaviour
     float speed = 3;
     float rotSpeed = 9;
     private float rotDir = 0f;
-    float gravity = 8;
+    float gravity = 1;
 
     private bool rotating = false;
 
@@ -20,7 +20,7 @@ public class playerController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        transform.position = new Vector3(PlayerPrefs.GetFloat("X"), PlayerPrefs.GetFloat("Y"), PlayerPrefs.GetFloat("Z"));
+        //transform.position = new Vector3(PlayerPrefs.GetFloat("X"), PlayerPrefs.GetFloat("Y"), PlayerPrefs.GetFloat("Z"));
         controller = GetComponent<CharacterController>();
         anim = GetComponent<Animator>();
     }
