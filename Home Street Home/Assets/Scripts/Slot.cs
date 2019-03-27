@@ -4,8 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Slot : MonoBehaviour {
+    public Inventory inv;
+
     public bool empty = true;
     public GameObject item;
+
+    public int slotNumb;
     
 	
 
@@ -15,5 +19,8 @@ public class Slot : MonoBehaviour {
         myItem.transform.SetParent(transform, false);
     }
 
-   
+    private void OnMouseOver()
+    {
+        inv.slotNumb = slotNumb;
+    }
 }

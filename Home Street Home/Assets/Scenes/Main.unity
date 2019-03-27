@@ -457,6 +457,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gm: {fileID: 57292491}
+  slotScript: {fileID: 0}
+  canvasCast: {fileID: 158582105}
   InventorySlots:
   - {fileID: 0}
   - {fileID: 0}
@@ -465,6 +467,7 @@ MonoBehaviour:
   - {fileID: 0}
   slotHolder: {fileID: 675323717}
   boughtItem: 0
+  slotNumb: 0
 --- !u!114 &57292496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -901,6 +904,7 @@ GameObject:
   - component: {fileID: 158582101}
   - component: {fileID: 158582100}
   - component: {fileID: 158582104}
+  - component: {fileID: 158582105}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -923,7 +927,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!114 &158582101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1007,6 +1011,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 068faaae042aa9a47aa99f22d2726adf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &158582105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 158582099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c935079d296b9ff49b06c1786027aec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layermask:
+    serializedVersion: 2
+    m_Bits: 0
+  setSlotNumb: 0
 --- !u!1001 &161763594
 Prefab:
   m_ObjectHideFlags: 0
@@ -1361,7 +1380,7 @@ MonoBehaviour:
   orbitAngle: 0
   sunrisePosition: -100
   dayProgress: 0
-  daySpeed: 1
+  daySpeed: 0.083
 --- !u!4 &247800528
 Transform:
   m_ObjectHideFlags: 0
@@ -3029,9 +3048,10 @@ GameObject:
   - component: {fileID: 534669904}
   - component: {fileID: 534669903}
   - component: {fileID: 534669906}
+  - component: {fileID: 534669907}
   m_Layer: 0
   m_Name: Main Camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3108,6 +3128,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1500089195}
+--- !u!114 &534669907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7cb9b0f0a47cce4dba83e21ad3911c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rayLength: 100
+  layermask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &542564020
 GameObject:
   m_ObjectHideFlags: 0
@@ -4178,7 +4213,8 @@ GameObject:
   - component: {fileID: 699383322}
   - component: {fileID: 699383321}
   - component: {fileID: 699383323}
-  m_Layer: 5
+  - component: {fileID: 699383324}
+  m_Layer: 10
   m_Name: InventorySlot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4232,8 +4268,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 522abe1501586ce4cb5e495aaa7d69fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inv: {fileID: 57292495}
   empty: 1
   item: {fileID: 0}
+  slotNumb: 0
+--- !u!61 &699383324
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 699383320}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &700105164
 GameObject:
   m_ObjectHideFlags: 0
@@ -8576,7 +8639,8 @@ GameObject:
   - component: {fileID: 1320776600}
   - component: {fileID: 1320776599}
   - component: {fileID: 1320776601}
-  m_Layer: 5
+  - component: {fileID: 1320776602}
+  m_Layer: 10
   m_Name: InventorySlot (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8630,8 +8694,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 522abe1501586ce4cb5e495aaa7d69fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inv: {fileID: 57292495}
   empty: 0
   item: {fileID: 0}
+  slotNumb: 2
+--- !u!61 &1320776602
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1320776598}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1341685785
 GameObject:
   m_ObjectHideFlags: 0
@@ -9416,7 +9507,8 @@ GameObject:
   - component: {fileID: 1465976162}
   - component: {fileID: 1465976161}
   - component: {fileID: 1465976163}
-  m_Layer: 5
+  - component: {fileID: 1465976164}
+  m_Layer: 10
   m_Name: InventorySlot (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9470,8 +9562,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 522abe1501586ce4cb5e495aaa7d69fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inv: {fileID: 57292495}
   empty: 0
   item: {fileID: 0}
+  slotNumb: 1
+--- !u!61 &1465976164
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1465976160}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1485237451 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: 75a0949199303b74c93e54fac0c8a52f,
@@ -11127,7 +11246,8 @@ GameObject:
   - component: {fileID: 1765117824}
   - component: {fileID: 1765117823}
   - component: {fileID: 1765117825}
-  m_Layer: 5
+  - component: {fileID: 1765117826}
+  m_Layer: 10
   m_Name: InventorySlot (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11181,8 +11301,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 522abe1501586ce4cb5e495aaa7d69fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inv: {fileID: 57292495}
   empty: 0
   item: {fileID: 0}
+  slotNumb: 3
+--- !u!61 &1765117826
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1765117822}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1771249153
 GameObject:
   m_ObjectHideFlags: 0
@@ -11352,7 +11499,8 @@ GameObject:
   - component: {fileID: 1785645632}
   - component: {fileID: 1785645631}
   - component: {fileID: 1785645633}
-  m_Layer: 5
+  - component: {fileID: 1785645634}
+  m_Layer: 10
   m_Name: InventorySlot (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11406,8 +11554,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 522abe1501586ce4cb5e495aaa7d69fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inv: {fileID: 57292495}
   empty: 0
   item: {fileID: 0}
+  slotNumb: 4
+--- !u!61 &1785645634
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1785645630}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1788999174
 GameObject:
   m_ObjectHideFlags: 0
