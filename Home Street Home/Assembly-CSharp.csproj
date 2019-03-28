@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\Consume.cs" />
     <Compile Include="Assets\Scripts\Day&amp;Night\DayNightCycle.cs" />
     <Compile Include="Assets\Scripts\Day&amp;Night\digitalClock.cs" />
+    <Compile Include="Assets\Scripts\Day&amp;Night\SkipNight.cs" />
     <Compile Include="Assets\Scripts\DontDestroy.cs" />
     <Compile Include="Assets\Scripts\gameMaster.cs" />
     <Compile Include="Assets\Scripts\Inventory\Inventory.cs" />

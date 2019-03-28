@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class digitalClock : MonoBehaviour {
     private bool nightTime;
+
     public gameMaster gm;
 
     public Text clockText;
@@ -28,6 +29,7 @@ public class digitalClock : MonoBehaviour {
     void Update()
     {
         //Switches nightTime boolean on/off depending on time
+     
         if (hour == 20)
         {
             nightTime = true; 

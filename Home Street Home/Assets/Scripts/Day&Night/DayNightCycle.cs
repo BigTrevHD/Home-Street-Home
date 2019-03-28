@@ -13,6 +13,7 @@ public class DayNightCycle : MonoBehaviour {
 
     [SerializeField] float daySpeed = .1f;
 
+
 	// Use this for initialization
 	void Start ()
     {
@@ -32,7 +33,7 @@ public class DayNightCycle : MonoBehaviour {
 
         sun.rotation = Quaternion.Euler(0, -90, 0);
         moon.rotation = Quaternion.Euler(0, 90, 0);
-        
+    
     }
 
    void SetOrbitalPath()
@@ -43,6 +44,15 @@ public class DayNightCycle : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            transform.Rotate(0, 0, daySpeed = 0);
+        }
+        if(Input.GetKeyUp(KeyCode.Space))
+        {
+            transform.Rotate(0, 0, daySpeed = .083f);
+        }
+    
         transform.Rotate(0, 0, daySpeed);
 		
 	}

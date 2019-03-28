@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class playerStats : MonoBehaviour
 {
@@ -36,6 +37,20 @@ public class playerStats : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Warmth == 0)
+        {
+            SceneManager.LoadScene(0);
+        }
+
+        if (Thirst == 0)
+        {
+            SceneManager.LoadScene(0);
+        }
+
+        if (Hunger == 0)
+        {
+            SceneManager.LoadScene(0);
+        }
 
         CalculateValues();
 
@@ -48,20 +63,7 @@ public class playerStats : MonoBehaviour
         Warmth -= warmthOverTimer * Time.deltaTime;
 
 
-        if (Warmth == 0)
-        {
-            print("PLAYER IS COLD");
-        }
-
-        if (Thirst == 0)
-        {
-            print("PLAYER IS PARCHED");
-        }
-
-        if (Hunger == 0)
-        {
-            print("PLAYER IS STARVING");
-        }
+       
 
         UpdateUI();
 

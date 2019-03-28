@@ -444,7 +444,7 @@ MonoBehaviour:
   WarmthBar: {fileID: 1319475655}
   ThirstBar: {fileID: 29429582}
   HungerBar: {fileID: 181670970}
-  minAmount: 5
+  minAmount: 0
 --- !u!114 &57292495
 MonoBehaviour:
   m_ObjectHideFlags: 0
