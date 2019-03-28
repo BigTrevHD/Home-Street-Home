@@ -593,7 +593,133 @@ GameObject:
   m_Component:
   - component: {fileID: 36910520}
   m_Layer: 0
+<<<<<<< HEAD
+  m_Name: GAMEMASTER
+  m_TagString: gm
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &57292491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 57292490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d18c476489ab444ebb12d715f5ff26c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1500089193}
+  lastPos: {fileID: 2067556000}
+  Diary: {fileID: 869941876}
+  cashText: {fileID: 902820480}
+  cash: 20
+  cam: {fileID: 534669904}
+  mainCam: {fileID: 682424793}
+  cafeCam: {fileID: 833653514}
+  shelterCam: {fileID: 2060904228}
+  currentScene: 0
+  inv: {fileID: 57292495}
+  day: 1
+  dayText: {fileID: 2117427219}
+--- !u!4 &57292492
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 57292490}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 503.16943, y: -29.891693, z: 1714.0078}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &57292493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 57292490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 068faaae042aa9a47aa99f22d2726adf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &57292494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 57292490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3642b0d8e40a1745ba4557a9113d717, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Warmth: 100
+  warmthOverTimer: 3
+  Thirst: 100
+  thirstOverTimer: 3
+  Hunger: 100
+  hungerOverTimer: 3
+  WarmthBar: {fileID: 1319475655}
+  ThirstBar: {fileID: 29429582}
+  HungerBar: {fileID: 181670970}
+  minAmount: 0
+--- !u!114 &57292495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 57292490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35380d0d7f86c3144b03b9731b6a2e5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gm: {fileID: 57292491}
+  slotScript: {fileID: 0}
+  canvasCast: {fileID: 158582105}
+  InventorySlots:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  slotHolder: {fileID: 675323717}
+  boughtItem: 0
+  slotNumb: 0
+--- !u!114 &57292496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 57292490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdc5562399c376b48aba0bf3dc4a6606, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gm: {fileID: 57292491}
+  clockText: {fileID: 999320475}
+  hour: 11
+  minute: 0
+--- !u!1 &66824419
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 66824420}
+  m_Layer: 5
+  m_Name: Stats
+=======
   m_Name: Roads & Pavements
+>>>>>>> master
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
