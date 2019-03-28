@@ -1250,11 +1250,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 57292491}
   Warmth: 100
-  warmthOverTimer: 10
+  warmthOverTimer: 3
   Thirst: 100
-  thirstOverTimer: 10
+  thirstOverTimer: 3
   Hunger: 100
-  hungerOverTimer: 10
+  hungerOverTimer: 3
   WarmthBar: {fileID: 1319475655}
   ThirstBar: {fileID: 29429582}
   HungerBar: {fileID: 181670970}
@@ -4792,7 +4792,7 @@ GameObject:
   m_Layer: 0
   m_Name: Destination1
   m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6227,7 +6227,7 @@ GameObject:
   m_Layer: 0
   m_Name: Destination4
   m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -12380,7 +12380,7 @@ GameObject:
   m_Layer: 0
   m_Name: Destination2
   m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -12714,8 +12714,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 682424792}
-  m_LocalRotation: {x: 0.35535794, y: 0.008146126, z: -0.0030981256, w: 0.9346897}
-  m_LocalPosition: {x: 0.12421605, y: 7.7617817, z: -24.15}
+  m_LocalRotation: {x: 0.39786562, y: 0.048955727, z: -0.021267323, w: 0.9158898}
+  m_LocalPosition: {x: 85.652664, y: 17.368547, z: 3.644701}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -16845,7 +16845,7 @@ GameObject:
   m_Layer: 0
   m_Name: Destination5
   m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -37672,7 +37672,7 @@ GameObject:
   m_Layer: 0
   m_Name: Destination3
   m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
