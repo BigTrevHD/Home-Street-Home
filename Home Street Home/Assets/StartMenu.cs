@@ -15,6 +15,8 @@ public class StartMenu : MonoBehaviour
     private int startSize;
     private int maxSize;
 
+    public bool onOff;
+
     void Start()
     {
         //Fetch the Raycaster from the GameObject (the Canvas)
@@ -47,7 +49,12 @@ public class StartMenu : MonoBehaviour
                     {
                         Debug.Log("Hit " + result.gameObject.name);
                         currText = result.gameObject;
-                    currText.transform.localScale = currText.transform.localScale * 2;
+                    // currText.transform.localScale = currText.transform.localScale * 2;
+                    if(onOff)
+                    {
+                        onOff = false;
+                    }
+                    
                 }
                 }
             }
