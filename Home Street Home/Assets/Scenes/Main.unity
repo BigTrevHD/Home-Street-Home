@@ -396,7 +396,7 @@ MonoBehaviour:
   mainCam: {fileID: 682424793}
   cafeCam: {fileID: 833653514}
   shelterCam: {fileID: 2060904228}
-  currentScene: 1
+  currentScene: 0
   inv: {fileID: 57292495}
   day: 1
   dayText: {fileID: 2117427219}
@@ -481,7 +481,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 57292491}
   clockText: {fileID: 999320475}
-  hour: 20
+  hour: 11
   minute: 0
 --- !u!1 &66824419
 GameObject:

@@ -7,6 +7,8 @@ TagManager:
   - NPC
   - gm
   - streetlight
+  - Start
+  - Help
   layers:
   - Default
   - TransparentFX
