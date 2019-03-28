@@ -9,7 +9,7 @@ public class gameMaster : MonoBehaviour {
     public GameObject player;
     public GameObject lastPos;
 
-    private bool showDiary;
+    public bool showDiary;
     public GameObject Diary;
     public Text cashText; 
 

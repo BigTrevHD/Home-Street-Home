@@ -47,7 +47,7 @@ public class StartMenu : MonoBehaviour
                     {
                         Debug.Log("Hit " + result.gameObject.name);
                         currText = result.gameObject;
-                    currText.transform.localScale = currText.transform.localScale * 2;
+                    
                 }
                 }
             }

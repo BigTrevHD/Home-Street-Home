@@ -21,8 +21,11 @@ public class digitalClock : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         // Calls the updateClock function, waits for x seconds, calls it every x seconds (12th of a day in minutes)
+
         InvokeRepeating("UpdateClock", 0f, 0.0833333f);
         streetlights = GameObject.FindGameObjectsWithTag("streetlight");
+        
+        
     }
 
     void Update()
@@ -69,7 +72,10 @@ public class digitalClock : MonoBehaviour {
 
     void UpdateClock()
     {
-        minute++;
+        if (!gm.showDiary)
+        {
+            minute++;
+        }
         
     }
 }
