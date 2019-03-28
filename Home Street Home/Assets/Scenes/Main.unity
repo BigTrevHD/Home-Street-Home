@@ -1232,7 +1232,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 57292490}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 068faaae042aa9a47aa99f22d2726adf, type: 3}
   m_Name: 
@@ -1248,6 +1248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3642b0d8e40a1745ba4557a9113d717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gm: {fileID: 57292491}
   Warmth: 100
   warmthOverTimer: 10
   Thirst: 100
@@ -3152,7 +3153,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 158582099}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 068faaae042aa9a47aa99f22d2726adf, type: 3}
   m_Name: 
