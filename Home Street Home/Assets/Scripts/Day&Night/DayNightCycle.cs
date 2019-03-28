@@ -13,18 +13,20 @@ public class DayNightCycle : MonoBehaviour {
 
     [SerializeField] float daySpeed = .1f;
 
-	// Use this for initialization
-	void Start ()
+    public gameMaster gm;
+
+    // Use this for initialization
+    void Start()
     {
 
         SetUpOrbitals();
         SetOrbitalPath();
 
-	}
+    }
 
     void SetUpOrbitals()
     {
-   
+
         Vector3 distanceFromOriginVector = new Vector3(distanceFromOrigin, 0, 0);
 
         sun.position = distanceFromOriginVector;
@@ -32,18 +34,32 @@ public class DayNightCycle : MonoBehaviour {
 
         sun.rotation = Quaternion.Euler(0, -90, 0);
         moon.rotation = Quaternion.Euler(0, 90, 0);
-        
+
     }
 
-   void SetOrbitalPath()
+    void SetOrbitalPath()
     {
-        transform.rotation = Quaternion.Euler(orbitAngle,sunrisePosition,dayProgress);
+        transform.rotation = Quaternion.Euler(orbitAngle, sunrisePosition, dayProgress);
     }
-	
-	// Update is called once per frame
-	void FixedUpdate () {
 
-        transform.Rotate(0, 0, daySpeed);
-		
-	}
+    // Update is called once per frame
+    void Update()
+    {
+        
+
+        if(gm.showDiary)
+        {
+            transform.Rotate(0, 0, daySpeed = 0f);            
+        }else
+        {
+            transform.Rotate(0, 0, daySpeed = 0.083f);
+        }
+            
+        
+    
+    
+       
+    }
+
+    
 }

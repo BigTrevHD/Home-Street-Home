@@ -1201,6 +1201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1500089193}
   lastPos: {fileID: 2067556000}
+  showDiary: 0
   Diary: {fileID: 869941876}
   cashText: {fileID: 902820480}
   cash: 20
@@ -1248,15 +1249,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Warmth: 100
-  warmthOverTimer: 3
+  warmthOverTimer: 10
   Thirst: 100
-  thirstOverTimer: 3
+  thirstOverTimer: 10
   Hunger: 100
-  hungerOverTimer: 3
+  hungerOverTimer: 10
   WarmthBar: {fileID: 1319475655}
   ThirstBar: {fileID: 29429582}
   HungerBar: {fileID: 181670970}
-  minAmount: 5
+  minAmount: 0
 --- !u!114 &57292495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4454,6 +4455,7 @@ MonoBehaviour:
   sunrisePosition: -100
   dayProgress: 0
   daySpeed: 0.083
+  gm: {fileID: 57292491}
 --- !u!4 &247800528
 Transform:
   m_ObjectHideFlags: 0
@@ -9525,13 +9527,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: -0.015610251, y: 0.00642221, z: -0.005891768, w: 0.99984026}
-  m_LocalPosition: {x: 0.12421605, y: 7.7617817, z: -24.15}
+  m_LocalRotation: {x: 0.089504845, y: -0.028068952, z: -0.009435197, w: 0.9955461}
+  m_LocalPosition: {x: 90.5, y: 7.7617817, z: -13.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: -1.784, y: 0.74700004, z: -0.68700004}
+  m_LocalEulerAnglesHint: {x: 10.235001, y: -3.354, z: -1.386}
 --- !u!114 &534669906
 MonoBehaviour:
   m_ObjectHideFlags: 0
