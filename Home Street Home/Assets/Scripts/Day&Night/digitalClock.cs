@@ -11,7 +11,7 @@ public class digitalClock : MonoBehaviour {
     public Text clockText;
 
     
-    public int hour = 20;
+    public int hour = 010;
     public int minute = 0;
 
     private GameObject[] streetlights;
@@ -28,7 +28,7 @@ public class digitalClock : MonoBehaviour {
     void Update()
     {
         //Switches nightTime boolean on/off depending on time
-        if (hour == 21)
+        if (hour == 20)
         {
             nightTime = true; 
         }
