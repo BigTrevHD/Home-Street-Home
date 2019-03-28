@@ -84,6 +84,7 @@
     <Compile Include="Assets\Scripts\Shop\EnterBuilding.cs" />
     <Compile Include="Assets\Scripts\Shop\GlobalShop.cs" />
     <Compile Include="Assets\Scripts\Slot.cs" />
+    <Compile Include="Assets\StartMenu.cs" />
     <Reference Include="Unity.ProBuilder.AddOns.Editor">
       <HintPath>C:/Users/Lydia/Documents/GitHub/Home-Street-Home/Home Street Home/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
